@@ -134,8 +134,9 @@
     text-align:center;
     padding:10px;
   }
-  .ad-banner{ width:300px; height:250px; max-width:100%; margin:26px auto 4px; }
+  .ad-banner{ width:300px; height:250px; max-width:100%; margin:26px auto 4px; padding:0; overflow:hidden; }
   .ad-native{ min-height:100%; }
+  .ad-native > div{ width:100%; }
   .ad-social{ min-height:56px; margin:34px 0 0; border-radius:0; border-left:0; border-right:0; border-bottom:0; }
 
   /* ---------- Sections ---------- */
@@ -385,9 +386,20 @@
   </div>
 </header>
 
-<!-- AD SLOT: banner 300x250 (Adsterra banner goes here) -->
+<!-- AD SLOT: banner 300x250 (Adsterra) -->
 <div class="wrap">
-  <div class="ad-slot ad-banner" aria-hidden="true">Advertisement</div>
+  <div class="ad-slot ad-banner">
+<script>
+  atOptions = {
+    'key' : '7fb218e51954bdc0d21ad41bedc53c7b',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/7fb218e51954bdc0d21ad41bedc53c7b"></script>
+  </div>
 </div>
 
 <main class="wrap">
@@ -492,8 +504,11 @@
         </div>
       </article>
 
-      <!-- AD SLOT: native (in-grid native banner goes here) -->
-      <div class="ad-slot ad-native" aria-hidden="true">Advertisement</div>
+      <!-- AD SLOT: native (Adsterra native banner) -->
+      <div class="ad-slot ad-native">
+<script async="async" data-cfasync="false" src="https://bauval.org/21/3abd8db177d8f49d429be952a1a39d5f"></script>
+<div id="container-3abd8db177d8f49d429be952a1a39d5f"></div>
+      </div>
 
       <!-- CarX Street -->
       <article class="card game-card" data-search="carx street racing open world drift cars">
@@ -671,9 +686,6 @@
 
 </main>
 
-<!-- AD SLOT: social bar (Adsterra social bar script goes here) -->
-<div class="ad-slot ad-social" aria-hidden="true">Advertisement</div>
-
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="wrap footer-inner">
@@ -704,5 +716,7 @@
     });
   })();
 </script>
+<!-- AD SLOT: social bar (Adsterra) -->
+<script src="https://bauval.org/14/182544a0bd0be23d4d629bd4d3777bba"></script>
 </body>
 </html>
